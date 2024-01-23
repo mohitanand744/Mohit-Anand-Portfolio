@@ -653,6 +653,24 @@ footer {
 
 /***** End scrollbar Section *****/
 
+/***** preloader *****/
+
+#preloader {
+  background: #000000 url("../Images/m.gif") no-repeat center center;
+  background-size: 10%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  transition: all 1s;
+  z-index: 9999;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+
+/***** End preloader *****/
+
 /***** Responsiveness *****/
 
 @media screen and (width <= 1152px) {
@@ -722,6 +740,9 @@ footer {
     font-size: 1.6rem;
     line-height: 1.2;
   }
+  #preloader {
+    background-size: 30%;
+  }
 }
 @media screen and (width <= 460px) {
   .Experience .card-container .card .card-txt {
@@ -737,21 +758,3 @@ footer {
   }
 }
 /***** End Responsiveness *****/
-
-/***** preloader *****/
-
-#preloader {
-  background: #fff url("../Images/preloader.gif") no-repeat center center;
-  background-size: 20%;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  transition: all 1s;
-  z-index: 9999;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -ms-transition: all 1s;
-  -o-transition: all 1s;
-}
-
-/***** End preloader *****/

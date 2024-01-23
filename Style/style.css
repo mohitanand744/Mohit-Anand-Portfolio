@@ -5,8 +5,8 @@
   font-family: Arial, Helvetica, sans-serif;
   border: none;
   text-decoration: none;
-  text-transform: capitalize;
   transition: 0.2s linear;
+  scroll-behavior: smooth;
 }
 html {
   font-size: 62.5%;
@@ -21,7 +21,7 @@ body {
 /***** Re-Use Code *****/
 
 .active {
-  background: linear-gradient(#f06, #3cf);
+  background: linear-gradient(rgb(255, 0, 102), #3cf);
   font-weight: bold;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -174,7 +174,7 @@ body {
     & .glowing-circle {
       width: 100%;
       height: 100%;
-      background: linear-gradient(#f06, #3cf, #f06, #3cf, #f06);
+      background: linear-gradient(#c1336c, #36a4c9);
       border-radius: 50%;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
@@ -189,7 +189,7 @@ body {
         position: absolute;
         width: 100%;
         height: 100%;
-        background: linear-gradient(#f06, #3cf, #f06);
+        background: linear-gradient(#c1336c, #36a4c9);
         filter: blur(10px);
         border-radius: 50%;
         -webkit-filter: blur(10px);
@@ -354,7 +354,7 @@ body {
     & .glowing-circle {
       width: 100%;
       height: 100%;
-      background: linear-gradient(#f06, #3cf, #f06, #3cf, #f06);
+      background: linear-gradient(#f06, #3cf);
       border-radius: 20%;
       -webkit-border-radius: 20%;
       -moz-border-radius: 20%;
@@ -368,7 +368,7 @@ body {
         position: absolute;
         width: 100%;
         height: 100%;
-        background: linear-gradient(#f06, #3cf, #f06);
+        background: linear-gradient(#f06, #3cf);
         filter: blur(10px);
         border-radius: 20%;
         -webkit-filter: blur(10px);
@@ -488,12 +488,7 @@ body {
     gap: 2rem;
     justify-content: space-evenly;
     max-width: 65%;
-    overflow-y: hidden;
-    overflow-x: scroll;
     margin: 0 auto;
-    &::-webkit-scrollbar {
-      display: none;
-    }
     & .card {
       display: flex;
       width: fit-content;
@@ -533,30 +528,93 @@ body {
     }
   }
 }
-
-.Ex {
-  background: transparent;
-  & .card-img {
-    & img {
-      width: 30rem;
-      height: 16rem;
-      border-top-left-radius: 2rem;
-      border-bottom-left-radius: 2rem;
-      background: #ffffff;
-      padding: 2rem;
-    }
-  }
-  & .card-txt {
-    & h4 {
-      font-size: 1.5rem;
-      line-height: 1.2;
+.My-Experience {
+  width: 100%;
+  height: 40rem;
+  & header {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & h2 {
+      font-size: 5.5rem;
+      margin-top: 2.6rem;
     }
     & p {
+      margin-top: 1rem;
       font-size: 1.6rem;
+      color: #ccc;
+    }
+  }
+  & .card-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 77%;
+    margin: 0px auto;
+    & .card {
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+      max-width: 40rem;
+      margin-bottom: 4rem;
+      padding: 3.2rem;
+      align-items: center;
+      margin-top: 4.6rem;
+      border-radius: 2rem;
+      -webkit-border-radius: 2rem;
+      -moz-border-radius: 2rem;
+      -ms-border-radius: 2rem;
+      -o-border-radius: 2rem;
+      gap: 2.6rem;
+      background-color: rgba(0, 0, 0, 0.5);
+
+      & .card-img {
+        & img {
+          width: 33rem;
+          background-color: #fff;
+          padding: 2.5rem;
+          border-radius: 2rem;
+          -webkit-border-radius: 2rem;
+          -moz-border-radius: 2rem;
+          -ms-border-radius: 2rem;
+          -o-border-radius: 2rem;
+        }
+      }
+      & .card-txt {
+        display: flex;
+        flex-direction: column;
+        gap: 1.3rem;
+
+        & h2 {
+          font-size: 2.5rem;
+        }
+        & h4 {
+          font-size: 1.6rem;
+        }
+        & p {
+          font-size: 1.6rem;
+        }
+      }
     }
   }
 }
+
 /***** End Experience Section *****/
+
+/***** Footer Section *****/
+/* 
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background: #000;
+  height: 6rem;
+}
+ */
+/***** End Footer Section *****/
 
 /***** KeyFrames *****/
 
@@ -575,7 +633,7 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 0.6rem;
+  width: 0.9rem;
 }
 
 /* Track */
@@ -585,7 +643,7 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(#f06, #3cf, #f06);
+  background: linear-gradient(#eb1d6f, #10baf3);
 }
 
 /* Handle on hover */
@@ -608,7 +666,7 @@ body {
     font-size: 2.6rem;
   }
   .Experience .card-container .card .card-txt h3 {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
   }
 }
 @media screen and (width <= 968px) {
@@ -617,6 +675,7 @@ body {
     gap: 3rem;
     max-width: 95%;
     margin: 0 auto;
+    padding: 10% 5%;
   }
   .Experience .card {
     flex-direction: column;
@@ -626,7 +685,7 @@ body {
     height: 60rem;
   }
   .Experience .card-container .card .card-img img {
-    width: 32rem;
+    width: 100%;
     border-radius: 2rem;
   }
 }
@@ -638,15 +697,19 @@ body {
 
 @media screen and (width <= 768px) {
   html {
-    font-size: 54.25%;
+    font-size: 52.25%;
   }
   .header nav {
     display: none;
   }
+
+  .Experience {
+    height: 72rem;
+  }
 }
 @media screen and (width <= 560px) {
   html {
-    font-size: 50.25%;
+    font-size: 48.25%;
   }
   .skills {
     width: 100%;
@@ -655,7 +718,7 @@ body {
     align-items: center;
     justify-content: center;
   }
-  .Ex .card-txt h4 {
+  .My-Experience .card-txt h4 {
     font-size: 1.6rem;
     line-height: 1.2;
   }
@@ -666,5 +729,29 @@ body {
     flex-direction: column;
     gap: 0.8rem;
   }
+  .hero .hero-content h1 {
+    font-size: 3.7rem;
+  }
+  .hero .hero-content h2 {
+    font-size: 3rem;
+  }
 }
 /***** End Responsiveness *****/
+
+/***** preloader *****/
+
+#preloader {
+  background: #fff url("../Images/preloader.gif") no-repeat center center;
+  background-size: 20%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  transition: all 1s;
+  z-index: 9999;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+
+/***** End preloader *****/

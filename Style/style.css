@@ -605,14 +605,10 @@ body {
     order: 1;
   }
   .Experience .card-container .card .card-txt h2 {
-    font-size: 1.8rem;
+    font-size: 2.6rem;
   }
   .Experience .card-container .card .card-txt h3 {
     font-size: 1.4rem;
-  }
-  .Ex .card-txt h4 {
-    font-size: 1.2rem;
-    line-height: 1.2;
   }
 }
 @media screen and (width <= 968px) {
@@ -658,6 +654,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .Ex .card-txt h4 {
+    font-size: 1.6rem;
+    line-height: 1.2;
   }
 }
 @media screen and (width <= 460px) {

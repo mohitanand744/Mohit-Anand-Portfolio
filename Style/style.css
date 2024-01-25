@@ -339,10 +339,12 @@ body {
         font-size: 1.6rem;
 
         & .details-1 p {
-          line-height: 1.6;
+          line-height: 1.5;
+          font-size: 1.5rem;
         }
         & .details-2 p {
-          line-height: 1.6;
+          line-height: 1.5;
+          font-size: 1.5rem;
         }
       }
     }
@@ -743,6 +745,9 @@ footer {
   #preloader {
     background-size: 30%;
   }
+  .My-Experience .card-container .card .card-txt h2 {
+    font-size: 3.4rem;
+  }
 }
 @media screen and (width <= 460px) {
   .Experience .card-container .card .card-txt {
@@ -755,6 +760,14 @@ footer {
   }
   .hero .hero-content h2 {
     font-size: 3rem;
+  }
+}
+@media screen and (width <= 420px) {
+  .about {
+    background: none;
+  }
+  .Experience {
+    background: none;
   }
 }
 /***** End Responsiveness *****/

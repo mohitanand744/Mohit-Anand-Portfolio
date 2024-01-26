@@ -14,7 +14,6 @@ html {
 body {
   background: url("../Images/tbg.jpg");
   background-attachment: fixed;
-  background-size: cover;
   width: 100%;
   height: 100vh;
   color: #fff;
@@ -715,6 +714,63 @@ body {
 
 /***** End latest work Section *****/
 
+/***** Services Section *****/
+
+.Services {
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+
+  & header h2 {
+    font-size: 5.5rem;
+  }
+  & .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 77%;
+    margin: 0px auto;
+    & .card {
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+      max-width: 40rem;
+      margin-bottom: 4rem;
+      padding: 3.2rem;
+      align-items: center;
+      margin-top: 4.6rem;
+      border-radius: 2rem;
+      -webkit-border-radius: 2rem;
+      -moz-border-radius: 2rem;
+      -ms-border-radius: 2rem;
+      -o-border-radius: 2rem;
+      gap: 2.6rem;
+      background-color: rgba(0, 0, 0, 0.5);
+
+      & .card-img {
+        & img {
+          width: 10rem;
+          padding: 1.6rem;
+          animation: zoomIn 1s linear infinite;
+          -webkit-animation: zoomIn 1s linear infinite alternate;
+        }
+      }
+      & h2 {
+        font-size: 2.6rem;
+        margin-top: -2rem;
+      }
+
+      & p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+/***** End Services Section *****/
+
 /***** Footer Section *****/
 /* 
 footer {
@@ -798,6 +854,11 @@ footer {
     font-size: 1.7rem;
   }
 }
+@media screen and (width <= 1024px) {
+  .Services {
+    margin-top: 57rem;
+  }
+}
 @media screen and (width <= 968px) {
   .about .about-content {
     grid-template-columns: repeat(1, 1fr);
@@ -870,5 +931,18 @@ footer {
   .hero .hero-content h2 {
     font-size: 3rem;
   }
+  .Experience header p {
+    font-size: 1.7rem;
+  }
+  .My-Experience header p {
+    font-size: 1.7rem;
+  }
+  .My-Experience .card-container .card .card-txt p {
+    font-size: 1.7rem;
+  }
+  .latest-work header p {
+    font-size: 1.7rem;
+  }
 }
+
 /***** End Responsiveness *****/

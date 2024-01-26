@@ -950,6 +950,9 @@ footer {
   .latest-work header p {
     font-size: 1.7rem;
   }
+  .Services .card-container .card .card-img img {
+    width: 11rem;
+  }
 }
 @media screen and (width <= 358px) {
   .hero {

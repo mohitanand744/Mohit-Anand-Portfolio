@@ -718,7 +718,7 @@ body {
 
 .Services {
   width: 100%;
-  max-width: 80%;
+  max-width: 97%;
   margin: 0 auto;
   text-align: center;
 
@@ -854,9 +854,12 @@ footer {
     font-size: 1.7rem;
   }
 }
-@media screen and (width <= 1024px) {
+@media screen and (width <= 1070px) {
   .Services {
     margin-top: 57rem;
+  }
+  .latest-work {
+    margin-top: 43rem;
   }
 }
 @media screen and (width <= 968px) {
@@ -944,5 +947,24 @@ footer {
     font-size: 1.7rem;
   }
 }
-
+@media screen and (width <= 358px) {
+  .hero {
+    margin-left: 2rem;
+  }
+  .skills {
+    margin-left: 2rem;
+  }
+  .Experience {
+    margin-left: 2rem;
+  }
+  .My-Experience {
+    margin-left: 2rem;
+  }
+  .latest-work {
+    margin-left: 2rem;
+  }
+  .Services {
+    margin-left: 8.5rem;
+  }
+}
 /***** End Responsiveness *****/

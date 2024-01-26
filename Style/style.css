@@ -925,6 +925,9 @@ footer {
   .Services .card-container .card p {
     font-size: 1.7rem;
   }
+  .Services .card-container .card .card-img img {
+    width: 11.5rem;
+  }
 }
 @media screen and (width <= 460px) {
   .Experience .card-container .card .card-txt {
@@ -949,9 +952,6 @@ footer {
   }
   .latest-work header p {
     font-size: 1.7rem;
-  }
-  .Services .card-container .card .card-img img {
-    width: 11rem;
   }
 }
 @media screen and (width <= 358px) {

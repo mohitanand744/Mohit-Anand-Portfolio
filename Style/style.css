@@ -905,7 +905,10 @@ form {
 /***** Footer Section *****/
 footer {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.521);
+  border-top-right-radius: 6rem;
+  border-top-left-radius: 6rem;
+  box-shadow: rgba(255, 255, 255, 0.39) 0px 22px 70px 4px;
   padding: 10rem;
   font-size: 1.6rem;
   color: #a7a7a7;

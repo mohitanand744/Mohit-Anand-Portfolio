@@ -58,7 +58,6 @@ body {
     }
   }
 }
-
 /***** Hero Section *****/
 
 .hero {
@@ -1186,7 +1185,17 @@ footer {
   }
   form .input-group input,
   textarea {
-    padding: 1.4rem;
+    padding: 1.7rem;
+  }
+  form {
+    & .input-group {
+      & label {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  footer {
+    font-size: 1.9rem;
   }
 }
 @media screen and (width <= 460px) {
@@ -1214,6 +1223,35 @@ footer {
     font-size: 1.7rem;
   }
 }
+@media screen and (width <= 375px) {
+  footer {
+    width: 113%;
+  }
+  form {
+    width: 104%;
+    margin-left: 1.5rem;
+  }
+  .Services {
+    width: 147%;
+    max-width: 111%;
+  }
+  .latest-work {
+    width: 147%;
+    max-width: 111%;
+  }
+  .My-Experience {
+    width: 147%;
+    max-width: 111%;
+  }
+  .Experience {
+    width: 147%;
+    max-width: 111%;
+  }
+  .skills {
+    width: 147%;
+    max-width: 111%;
+  }
+}
 @media screen and (width <= 358px) {
   .hero {
     margin-left: 2rem;
@@ -1232,6 +1270,38 @@ footer {
   }
   .Services {
     margin-left: 8.5rem;
+  }
+}
+@media screen and (width <= 320px) {
+  .hero {
+    width: 110%;
+  }
+  .skills {
+    width: 138%;
+    max-width: 119%;
+  }
+  .Experience {
+    width: 147%;
+    max-width: 122%;
+  }
+  .My-Experience {
+    width: 147%;
+    max-width: 118%;
+  }
+  .latest-work {
+    width: 147%;
+    max-width: 120%;
+  }
+  .Services {
+    width: 171%;
+    max-width: 95%;
+  }
+  form {
+    width: 121%;
+    margin-left: 1rem;
+  }
+  footer {
+    width: 132%;
   }
 }
 /***** End Responsiveness *****/

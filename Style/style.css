@@ -907,7 +907,6 @@ footer {
   background-color: rgba(0, 0, 0, 0.521);
   border-top-right-radius: 6rem;
   border-top-left-radius: 6rem;
-  box-shadow: rgba(255, 255, 255, 0.39) 0px 22px 70px 4px;
   padding: 10rem;
   font-size: 1.6rem;
   color: #a7a7a7;
@@ -988,7 +987,6 @@ footer {
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
       }
     }
   }
@@ -1225,7 +1223,9 @@ footer {
 }
 @media screen and (width <= 375px) {
   footer {
-    width: 113%;
+    background-color: transparent;
+    border-top: 5px solid #ddd;
+    width: 114%;
   }
   form {
     width: 104%;
@@ -1270,6 +1270,9 @@ footer {
   }
   .Services {
     margin-left: 8.5rem;
+  }
+  footer {
+    width: 130%;
   }
 }
 @media screen and (width <= 320px) {

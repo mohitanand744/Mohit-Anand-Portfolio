@@ -23,17 +23,27 @@
         <a href="#">
             <img class="logo" src="./Images/Logo.png" alt="YouTube Channel Logo" width="150px" height="auto" />
         </a>
-        <img class="menu" src="./Images/icons8-menu-64.png" width="44px" height="44px
+        <div class="bar">
+            <img class="menu" src="./Images/icons8-menu-64.png" width="44px" height="44px
         " alt="menu" />
+        </div>
         <nav>
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
+            <li> <a href="#home" class="active">Home</a></li>
+            <li> <a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li> <a href="#services">Services</a></li>
+            <li> <a href="#contact">Contact</a></li>
         </nav>
     </header>
+    <div class="dropdown-menu">
+        <li> <a href="#home" class="active">Home</a></li>
+        <li> <a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li> <a href="#services">Services</a></li>
+        <li> <a href="#contact" class="btn">Contact</a></li>
+    </div>
 
     <!-- ========== End Header Section ========== -->
 
@@ -434,6 +444,15 @@
             loader.style.display = "none";
         })
 
+        const barbtn = document.querySelector('.bar')
+        const barbtnicon = document.querySelector('.bar img')
+        const dropdownmenu = document.querySelector('.dropdown-menu')
+
+        barbtn.onclick = function () {
+            dropdownmenu.classList.toggle('open')
+            const isOpen = dropdownmenu.classList.contains('open')
+            
+        }
     </script>
 </body>
 

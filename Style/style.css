@@ -1255,6 +1255,10 @@ footer {
 @media screen and (width <= 358px) {
   .hero {
     margin-left: 2rem;
+    width: 120% ;
+  }
+  .about {
+    width: 117%;
   }
   .skills {
     margin-left: 2rem;
@@ -1276,9 +1280,6 @@ footer {
   }
 }
 @media screen and (width <= 320px) {
-  .hero {
-    width: 125%;
-  }
   .skills {
     width: 138%;
     max-width: 119%;
@@ -1305,9 +1306,6 @@ footer {
   }
   footer {
     width: 135%;
-  }
-  .about {
-    width: 134%;
   }
 }
 /***** End Responsiveness *****/

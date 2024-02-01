@@ -714,7 +714,7 @@ body {
   & .card-container {
     display: flex;
     justify-content: center;
-    overflow-x: scroll;
+    flex-wrap: wrap;
     gap: 2rem;
     max-width: 85%;
     margin: 0px auto;
@@ -1196,6 +1196,9 @@ footer {
   footer .center {
     text-align: left;
   }
+  .latest-work{
+    margin-bottom: 51rem
+  }
 }
 @media screen and (width <= 1070px) {
   .Services {
@@ -1229,6 +1232,9 @@ footer {
   }
   footer .center {
     text-align: left;
+  }
+  .latest-work{
+    margin-bottom: 111rem
   }
 }
 @media screen and (width > 768px) {
